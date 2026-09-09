@@ -1,0 +1,225 @@
+/* FOOTER SECTION CSS START FROM HERE */
+footer {
+    background: $light-green;
+    .website-footer {
+        padding: 60px 0;
+        .our-information {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+            .website-logo {
+                display: block;
+                margin-bottom: 40px;
+                @media (max-width: 1199px){
+                    margin-bottom: 30px;
+                }
+                @media (max-width: 991px) {
+                    margin-bottom: 20px;
+                    display: inherit;
+                }
+            }
+            p {
+                margin-left: 30px;
+                max-width: 500px;
+                @media (max-width: 1199px){
+                    font-size: 16px;
+                }
+                @media (max-width: 991px) {
+                    max-width: 600px;
+                    margin: 0 auto 40px auto;
+                }
+            }
+        }
+        .footer-links {
+            .footer-title {
+                @media (max-width: 991px) {
+                    margin-bottom: 20px;
+                }
+                &[aria-expanded="true"] {
+                    .footer-toggler {
+                        img {
+                            transform: rotate(180deg) !important;
+                        }
+                    }
+                }
+                &.mob {
+                    @media (max-width: 991px) {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        .footer-toggler {
+                            transform: translateY(-50%);
+                            top: 50%;
+                            position: absolute;
+                            right: 0;
+                            line-height: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 30px;
+                            height: 30px;
+                            background: $primary-color;
+                            border-radius: 10px;
+                            @media (max-width: 480px){
+                                width: 25px;
+                                height: 25px;
+                            }
+                            img {
+                                transition: 0.3s all;
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                    @media (min-width: 992px) {
+                        .footer-toggler {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 30px;
+                @media (max-width: 375px){
+                    font-size: 18px;
+                }
+            }
+            ul {
+                @media (max-width: 991px) {
+                    margin-left: 30px;
+                }
+                @media (max-width: 480px) {
+                    margin-left: 20px;
+                }
+                &.foot-mob {
+                    @media (min-width: 992px) {
+                        display: block;
+                    }
+                    img{
+                        width: 20px;
+                        min-width: 20px;
+                    }
+                }
+                li {
+                    margin-bottom: 20px;
+                    @media (max-width: 375px){
+                        margin-bottom: 10px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                        @media (max-width: 991px) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .number,
+                    .mail-id,
+                    .address {
+                        margin-left: 10px;
+                        .foot-address{
+                            margin-bottom: 0;
+                            @media (max-width: 1199px){
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    
+                    a {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: rgba(6, 26, 42, 0.6);
+                        transition: 0.3s all;
+                        display: block;
+                        @media (max-width: 1199px){
+                            font-size: 16px;
+                        }
+                        @media (max-width: 575px){
+                            font-size: 15px;
+                        }
+                        @media (max-width: 375px){
+                            font-size: 14px;
+                        }
+
+                        &:first-letter {
+                            
+                            text-transform: uppercase;
+                        }
+
+                        &:hover {
+                            color: $secondary-color;
+                            transition: 0.3s all;
+                        }
+                    }
+                    
+                  
+                }
+            }
+        }
+    }
+    .copy-right {
+        background: $primary-color;
+        padding: 14px 0;
+        text-align: center;
+        @media (max-width: 1199px){
+            padding: 14px 0 60px 0;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+            @media (max-width: 1199px) {
+                font-size: 16px;
+            }
+            @media (max-width: 767px) {
+                font-size: 15px;
+            }
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
+            @media (max-width: 375px){
+                font-size: 13px;
+            }
+        }
+    }
+    .cards {
+        margin-top: 30px;
+        @media (max-width: 991px){
+            margin-top: 20px;
+        }
+        .visa {
+            margin-right: 30px;
+            @media (max-width: 991px){
+                margin-right: 20px;
+            }
+            @media (max-width: 575px){
+                margin-bottom: 10px;
+                margin-right: 0px;
+            }
+        }
+        .encryption {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            p {
+                margin: 0 0 0 12px;
+                font-size: 18px;
+                @media (max-width: 1199px){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+/* FOOTER SECTION CSS END'S FROM HERE */
+
+
+footer .website-footer .footer-links ul li .mail-id a{
+    &::first-letter{
+        text-transform: lowercase;
+    }
+}

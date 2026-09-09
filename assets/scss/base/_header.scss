@@ -1,0 +1,278 @@
+/* HEADER CSS START FROM HERE */
+header {
+    // padding: 20px 40px;
+    transition: 0.3s all;
+
+    &.fix-top {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        background: transparent;
+        z-index: 999;
+        box-shadow: 0px 8px 15px transparent;
+        transition: 0.5s all;
+
+        @media (max-width: 1199px) {
+            // background: #fff;
+            // padding: 15px 30px;
+        }
+
+        @media (max-width: 575px) {
+            // padding: 15px;
+        }
+    }
+
+    &.bg-white {
+        position: unset;
+    }
+
+    &.fixed-menu {
+        background: #fff;
+        top: -80px;
+        z-index: 999;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        @media (max-width: 1199px) {
+            top: 0px;
+        }
+
+        // .navbar {
+        //     padding: 15px 50px;
+
+        //     @media (max-width: 1399px) {
+        //         padding: 15px 40px;
+        //     }
+
+        //     @media (max-width: 1199px) {
+        //         padding: 15px 30px;
+        //     }
+
+        //     @media (max-width: 575px) {
+        //         padding: 15px;
+        //     }
+        // }
+    }
+
+    .navbar {
+        // padding: 20px 40px;
+        max-width: 1980px;
+        margin: 0 auto;
+
+        @media (max-width: 575px) {
+            padding: 12px;
+        }
+
+        .logo {
+            @media (max-width:1199px) {
+                margin-right: auto;
+            }
+
+            .navbar-brand {
+                display: flex;
+                margin-right: 0;
+                padding: 0;
+                line-height: 0;
+
+                img {
+                    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+                        max-width: 160px;
+                    }
+
+                    @media screen and (max-width: 575px) {
+                        max-width: 160px;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler {
+            background: #000;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            margin: 0 5px;
+
+            &:focus,
+            :active {
+                box-shadow: none;
+            }
+
+            .icon-bar {
+                transition: all 0.1.3s;
+                background: #fff;
+                display: block;
+                width: 15px;
+                height: 2px;
+                // margin-left: -6px;
+                transition: 0.3s all;
+
+                &+.icon-bar {
+                    margin-top: 4px;
+                }
+
+                &:nth-of-type(1) {
+                    transform: rotate(0);
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    position: relative;
+                    width: 15px;
+                    background: #fff;
+                    position: relative;
+
+                    &:after {
+                        display: block;
+                        content: "";
+                        transition: all 0.1.3s;
+                        background: #232230;
+                        display: block;
+                        width: 8px;
+                        height: 2px;
+                        border-radius: 4px;
+                        background: rgba(255, 255, 255, 0.5);
+                        position: absolute;
+                        right: -10px;
+                        left: auto;
+                        display: none;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotate(0);
+                    position: relative;
+                    width: 15px;
+                    background: #fff;
+                    position: relative;
+                }
+            }
+        }
+
+        .navbar-toggler[aria-expanded="true"] {
+            .icon-bar {
+                // margin-left: -8px;
+
+                &+.icon-bar {
+                    // margin-top: -3px;
+                }
+
+                &:nth-of-type(1) {
+                    transform: rotate(45deg);
+                    // width: 20px;
+                    position: relative;
+                    top: 6px;
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                    // width: 20px;
+                    // left: 0;
+                    // top: 2px;
+                    position: relative;
+                    top: -6px;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            @media (max-width: 1199px) {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                z-index: 99;
+                background: #FFF;
+                left: 0;
+            }
+
+            @media (max-width:575px) {
+                // top: 50px;
+            }
+        }
+
+        .navbar-nav {
+            align-items: center;
+
+            .nav-item {
+
+                // margin: 0 10px;
+                // @media (max-width: 1399px){
+                //     margin: 0 8px;
+                // }
+                // @media (max-width: 1199px){
+                //     margin: 0;
+                // }
+                // &:first-child{
+                //     margin-left: 0;
+                // }
+                // &:last-child {
+                //     margin: 0;
+                // }
+                .icon {
+                    line-height: 0;
+                    margin-right: 5px;
+                }
+
+                .nav-link {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $light-black;
+                    font-weight: 400;
+                    padding: 0 12px;
+                    transition: 0.3s all;
+
+                    @media (max-width: 1399px) {
+                        font-size: 15px;
+                        padding: 0 10px;
+                    }
+
+                    @media (max-width: 1199px) {
+                        padding: 10px 0;
+                    }
+
+                    &:hover,
+                    &.active {
+                        color: $primary-color;
+                        // font-weight: 500;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-top,
+.main-header {
+    padding: 20px 0;
+}
+
+.main-header {
+    @media screen and (max-width: 1199px) {
+        padding: 0;
+    }
+}
+#navbarNav{
+    justify-content: center;
+    transition: 0.5s all;
+}
+#main-header-logo {
+
+    @media screen and (max-width: 1199px) {
+        display: none !important;
+    }
+}
+
+/* HEADER CSS END'S FROM HERE */

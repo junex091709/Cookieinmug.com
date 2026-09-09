@@ -1,0 +1,331 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; // To inherit box-sizing from "body" element
+  // border: 1px solid red;
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $gilroy;
+  overflow-x: hidden;
+  // scroll-behavior: smooth;
+  font-display: swap;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/Gilroy-Light.woff2") format("woff2"),
+    url("../fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/Gilroy-SemiBold.woff2") format("woff2"),
+    url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $gilroy;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: $light-black;
+  margin-bottom: 30px;
+  @media (max-width: 1399px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 17px;
+  }
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
+}
+
+section {
+  flex: 1 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* MEMBERSHIP CSS START FROM HERE */
+.membership {
+  background: linear-gradient(77.1deg, #f1e9c8 1.23%, #f0f7ee 77.51%);
+  border-radius: 18px;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+  @media (max-width: 991px) {
+    padding: 25px;
+  }
+  @media (max-width: 575px) {
+    padding: 20px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 20px;
+    padding: 15px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: $primary-color;
+    @media (max-width: 991px) {
+      font-size: 15px;
+    }
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+}
+/* MEMBERSHIP CSS END'S FROM HERE */
+
+/* ICON BACKGROUND CSS START FROM HERE */
+.icon-border {
+  border: 1px solid $secondary-color;
+  border-radius: 100%;
+  padding: 7px;
+  width: 115px;
+  height: 115px;
+  @media (max-width: 1399px) {
+    width: 105px;
+    height: 105px;
+  }
+  @media (max-width: 1199px) {
+    width: 95px;
+    height: 95px;
+  }
+  @media (max-width: 767px) {
+    width: 85px;
+    height: 85px;
+  }
+  @media (max-width: 575px) {
+    width: 75px;
+    height: 75px;
+  }
+  @media (max-width: 375px) {
+    width: 65px;
+    height: 65px;
+  }
+  .icon {
+    background: $secondary-color;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1399px) {
+      width: 90px;
+      height: 90px;
+    }
+    @media (max-width: 1199px) {
+      width: 80px;
+      height: 80px;
+    }
+    @media (max-width: 767px) {
+      width: 70px;
+      height: 70px;
+    }
+    @media (max-width: 575px) {
+      width: 60px;
+      height: 60px;
+    }
+    @media (max-width: 375px) {
+      width: 50px;
+      height: 50px;
+    }
+    img {
+      @media (max-width: 1399px) {
+        max-width: 40px;
+      }
+      @media (max-width: 767px) {
+        max-width: 30px;
+      }
+      @media (max-width: 375px) {
+        max-width: 25px;
+      }
+    }
+  }
+}
+/* ICON BACKGROUND CSS END'S FROM HERE */
+
+/* CHAT CSS START FROM HERE */
+div#chat-widget-container {
+  left: 0 !important;
+  bottom: 0 !important;
+  max-height: calc(100% - 80px) !important;
+  overflow-y: auto !important;
+  z-index: 2 !important;
+}
+/* CHAT CSS END'S FROM HERE */

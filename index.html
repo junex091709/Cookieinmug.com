@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <!-- DOM head start -->
+  <head>
+    <title translate="no">{{ cloud_name }}</title>
+    <meta charset="UTF-8" />
+    <meta name="title" content="{{ cloud_name }}" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="theme-color" content="" />
+    <meta name="description" content="" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:url" content="{{ url_base }}" />
+    <meta property="og:title" content="{{ cloud_name }}" />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="{{ url_base }}/assets/images/thumbnail.jpg"
+    />
+    <!-- FAVICON -->
+    <link
+      href="assets/images/favicon.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <!-- LIVE FONT -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
+    <!-- LOCAL CSS LINK -->
+    <link
+      rel="preload stylesheet"
+      as="style"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="preload stylesheet"
+      as="style"
+      type="text/css"
+      href="assets/css/main.css"
+    />
+
+    <script>
+      window.scrollTo(0, 0);
+    </script>
+  </head>
+  <!-- DOM head end -->
+
+  <!-- DOM body start -->
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand brand-mark" href="#">Roast &amp; Rise</a>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a href="#order" class="btn btn-order">Order Now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Left copy -->
+          <div class="col-lg-6">
+            <div class="hero-badge">
+              <div class="icon">R&amp;R</div>
+              <div>
+                <div class="brand-name">Roast &amp; Rise</div>
+                <div class="brand-sub">ARTISAN CAFÉ &amp; BAKERY</div>
+              </div>
+            </div>
+
+            <h1>
+              Crafted with<br />
+              <span class="accent">slow hands</span><br />
+              &amp; good beans.
+            </h1>
+
+            <p class="lede">
+              Every cup and every loaf is made to order in our open kitchen. No
+              shortcuts, no rush — just honest food that tastes like it was made
+              for you.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#menu" class="btn-primary-cta">See the Menu</a>
+              <a href="#contact" class="btn-secondary-cta">Visit Us</a>
+            </div>
+
+            <div class="hero-stats">
+              <span>Est. 2018</span>
+              <span>Locally Sourced</span>
+              <span>Open 7 Days</span>
+            </div>
+          </div>
+
+          <!-- Right visual -->
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="ring"></div>
+              <div class="frame">
+                <img
+                  src="https://images.unsplash.com/photo-1617902206819-ec9955c8fa44?fm=jpg&q=80&w=900&auto=format&fit=crop"
+                  alt="Stoneware coffee mug on a wooden table"
+                />
+                <div class="floating-badge">Brewed fresh every morning</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Welcome Modal End -->
+
+    <!-- SCRIPTS start -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <!-- SCRIPTS end -->
+  </body>
+</html>

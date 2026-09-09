@@ -1,0 +1,146 @@
+/* CONTACT US SECTION CSS START FROM HERE */
+.contact-wrapper {
+    .contact-content {
+        padding: 30px;
+        background: #FFFFFF;
+        border: 1px solid rgba(30, 87, 94, 0.2);
+        border-radius: 10px;
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:after {
+            border-color: #fff transparent transparent transparent;
+            border-width: 10px;
+        }
+
+        &::before {
+            border-color: rgba(30, 87, 94, 0.2) transparent transparent transparent;
+            border-width: 11px;
+        }
+
+
+        .title {
+            h2 {
+                color: #061A2A;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .content-block {
+            position: relative;
+            padding-right: 10px;
+
+            @media screen and (max-width:991px) {
+                padding-bottom: 10px;
+                padding-right: 0px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 2px;
+                background-color: rgba(49, 49, 49, 0.1);
+                left: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @media screen and (max-width:991px) {
+                    width: 100%;
+                    height: 2px;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        .content {
+            position: relative;
+
+            @media screen and (max-width:991px) {
+                text-align: center;
+            }
+
+            h5 {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #313131;
+            }
+
+            p {
+                max-width: 370px;
+
+                a {
+                    color: #6F6F6F;
+                    display: inline-block;
+
+                    &:hover {
+                        color: #061A2A;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* CONTACT US SECTION CSS END'S FROM HERE */
+/* SIGN-UP SECTION CSS START FROM HERE */
+.sign-up-wrapper  {
+    .content {
+        @media (max-width: 991px) {
+          margin-bottom: 50px;
+        }
+        @media (max-width: 575px) {
+          margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 42px;
+            line-height: 50px;
+
+            @media (max-width: 1199px) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        h5{
+            font-size: 18px;
+            font-weight: 500;
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            a {
+                color: #061A2A;
+
+                &:hover {
+                    color: #F4CE24;
+                }
+            }
+        }
+    }
+}
+
+/* SIGN-UP SECTION CSS END'S FROM HERE */

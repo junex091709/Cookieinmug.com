@@ -1,0 +1,68 @@
+/* ABOUT US SECTION CSS START FROM HERE */
+// .about-wrapper{
+//     .about-img{
+//         line-height: 0;
+//         @media (max-width: 991px){
+//             text-align: center;
+//         }
+//         img{
+//             @media screen and (min-width: 420px) and (max-width: 575px){
+//                 max-width: 350px;
+//             }
+//         }
+//     }
+//     .about-content{
+//         @media (max-width: 991px){
+//             text-align: center;
+//             margin-bottom: 40px;
+//         }
+//         @media (max-width: 575px){
+//             margin-bottom: 30px;
+//         }
+//         p{
+//             max-width: 360px;
+//             @media (max-width: 991px){
+//                 max-width: 500px;
+//                 margin: 0 auto 20px auto;
+//             }
+//         }
+//     }
+// }
+
+.about-us {
+    .img-wrapper {
+        text-align: end;
+
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+        @media (max-width: 575px) {
+            max-width: 380px;
+            margin: auto;
+        }
+    }
+
+    .content {
+        max-width: 500px;
+
+        @media (max-width: 991px) {
+            text-align: center;
+            margin: 0 auto 30px;
+        }
+
+
+        h2 {
+            // @include title;
+        }
+
+        // h6 {
+        //     @include content;
+        //     color: #000000;
+        // }
+
+        // p {
+        //     @include content;
+        // }
+    }
+}
+/* ABOUT US SECTION CSS END'S FROM HERE */ 
